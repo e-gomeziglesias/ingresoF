@@ -68,10 +68,10 @@ function mostrar()
 	}
 	
 	//a)informar la cantidad de mujeres.
-	console.log("La cantidad de mujeres ingresadas es "+contadorMujeres);
+	console.log("a. La cantidad de mujeres ingresadas es "+contadorMujeres);
 	//b)la edad promedio en total.
 	promedioEdad = edadAcumulada / contadorPersonas;
-	console.log("La edad promedio de las personas ingresadas es "+promedioEdad);
+	console.log("b. La edad promedio de las personas ingresadas es "+promedioEdad);
 	//c)el hombre mas pesado.
-	console.log("El hombre mas pesado es "+nombreHombrePesado+" y pesa "+pesoHombrePesado+"kg.");
+	console.log("c. El hombre mas pesado es "+nombreHombrePesado+" y pesa "+pesoHombrePesado+"kg.");
 }

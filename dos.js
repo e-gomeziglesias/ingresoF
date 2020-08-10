@@ -81,23 +81,23 @@ c)la marca del más barato de los sólidos
   
   //muestro por consola los resultados
   //a)informar el peso total de la compra.
-  console.log("El peso total de la compra es "+pesoTotal+"kg.");
+  console.log("a. El peso total de la compra es "+pesoTotal+"kg.");
   //b)la marca del más caro de los líquidos
   if (flagPrimerLiquido != 0)
   {
-    console.log("El liquido mas caro cuesta $"+precioLiquidoCaro+" y es de la marca "+marcaLiquidoCaro);
+    console.log("b. El liquido mas caro cuesta $"+precioLiquidoCaro+" y es de la marca "+marcaLiquidoCaro);
   }
   else
   {
-    console.log("No se ingresaron liquidos.");
+    console.log("b. No se ingresaron liquidos.");
   }
   //c)la marca del más barato de los sólidos
   if (flagPrimerSolido != 0)
   {
-    console.log("El solido mas barato cuesta $"+precioSolidoBarato+" y es de la marca "+marcaSolidoBarato);
+    console.log("c. El solido mas barato cuesta $"+precioSolidoBarato+" y es de la marca "+marcaSolidoBarato);
   }
   else
   {
-    console.log("No se ingresaron solidos.");
+    console.log("c. No se ingresaron solidos.");
   }
 }

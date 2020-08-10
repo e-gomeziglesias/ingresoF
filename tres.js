@@ -86,32 +86,37 @@ function mostrar()
 			contadorCantidadViajesInvierno++;
 		}
 		//condicion de salida del bucle do while
+		respuesta = prompt("Desea ingresar otro grupo de pasajeros? 's' o 'n'.");
 		//valido condicion de salida del bucle do while
+		while (!(respuesta == 's' || respuesta == 'n'))
+		{
+			respuesta = prompt("La respuesta ingresada es invalida. Desea ingresar otro grupo de pasajeros? 's' o 'n'.");
+		}
 	}while(respuesta == 's');
 	//Muestro los resultados por consola
 	//a)el lugar más elegido
 	if (contadorBariloche > contadorCataratas && contadorBariloche > contadorSalta)
 	{
-		console.log("El destino mas elegido es Bariloche.");
+		console.log("a. El destino mas elegido es Bariloche.");
 	}
 	else if(contadorCataratas > contadorBariloche && contadorCataratas > contadorSalta)
 	{
-		console.log("El destino mas elegido es Cataratas.");
+		console.log("a. El destino mas elegido es Cataratas.");
 	}
 	else if(contadorSalta > contadorBariloche && contadorSalta > contadorCataratas)
 	{
-		console.log("El destino mas elegido es Salta.");
+		console.log("a. El destino mas elegido es Salta.");
 	}
 	//b)el sexo de titular que lleva más pasajeros.
-	if (sexo == 'f')
+	if (sexoMaxCantidadPersonas == 'f')
 	{
-		console.log("El titular que lleva mas pasajeros ("+cantidadPersonasMax+") es mujer.");
+		console.log("b. El titular que lleva mas pasajeros ("+cantidadPersonasMax+") es mujer.");
 	}
 	else
 	{
-		console.log("El titular que lleva mas pasajeros ("+cantidadPersonasMax+") es hombre.");
+		console.log("b. El titular que lleva mas pasajeros ("+cantidadPersonasMax+") es hombre.");
 	}
 	//c)el promedio de personas por viaje,  que viajan en invierno
 	promedioPersonasPorViaje = acumuladorPersonasInvierno / contadorCantidadViajesInvierno;
-	console.log("El promedio de personas por viaje que viajan en invierno es de "+promedioPersonasPorViaje+" personas.");
+	console.log("c. El promedio de personas por viaje que viajan en invierno es de "+promedioPersonasPorViaje+" personas.");
 }
